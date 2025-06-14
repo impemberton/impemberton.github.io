@@ -1,14 +1,18 @@
-body {
+
+/* Global styles */
+html, body {
     font-family: verdana;
     padding: 0;
     margin: 0;
+    font-size: 16px;
+    background-image: url(./assets/BG.png);
+    height: 100%;
 }
 nav {
-    color: aliceblue;
+    color: white;
     background-color: #3dc578;
     text-align: center;
-    margin: 0 20%;
-    padding: 16px 0;
+    margin:auto;
 }
 nav ul{
     display: inline;
@@ -16,18 +20,13 @@ nav ul{
 nav h1 {
     display: inline;
 }
+
 nav ul li {
-    padding: 0 3%;
-    margin:0;
     display: inline;
 }
 
-article {
-    margin: 32px 20%;
-}
-
 nav a {
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     font-weight: 100;
 }
@@ -38,10 +37,43 @@ a {
     font-weight: bold;
 
 }
-h1 a {
-    font-weight: bold;
+
+nav {
+    padding: 16px;
 }
+
+nav ul li {
+    padding: 0 3%;
+    margin:0;
+}
+article {
+    padding: 16px;
+    margin: auto;
+    height: 100%;
+    background-color: white;
+}
+
 header {
     margin: 10px 0;
     padding: 0;
+}
+
+h1 a {
+    font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+}
+/* Large devices (laptops/desktops, 950px and up) */
+@media only screen and (min-width: 950px) {
+    nav, article {
+        max-width: 950px;
+    }
+    nav, article {
+        padding: 16px 32px;
+    }
 }
