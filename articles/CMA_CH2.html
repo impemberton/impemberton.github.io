@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <title>CMA Chapter 2</title>
+  </head>
+  <body>
+    <nav>
+      <h1><a href="../index.html">Ike's Site</a></h1>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../tags.html">Tags</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <article>
+    <header>15.06.2025</header>
+    <h1>'C Programming, A Modern Approach' Chapter 2 Answers</h1>
+    <hr>
+    <p>I already have my answers in the various readmes on this repo <a href="https://github.com/impemberton/CModernApproach">here</a></p>
+    <p>You may have noticed there are no answers for Chapter 1. This is because Chapter 1 did not have an exercises/programming projects section.</p>
+    <h2>Exercises</h2>
+    <hr>
+    <ol>
+      <li>
+        <h3>Hello World</h3>
+        <p>back to basics with this one. The book asked whether I got a compiler warning but I actually didn't. Maybe they expect you to forget to include stdio.h.</p>
+      </li>
+      <li>
+        <h3>Parkinson's Law</h3>
+        <p>This one asks to identify the statements and directives in this program:</p>
+        <pre>
+          <code>
+#include &lt;stdio.h&gt;
+int main(void)
+{
+  printf("Parkinson's Law:\nWork expands so as to ");
+  printf("fill the time\n);
+  printf("available for its completion.\n");
+  return 0;
+}       
+        </code></pre>
+        <p>The directive is the "include" before the main function and the statements are all the printf functions and the final return.</p> 
+        <h4>The output:</h4>
+        <pre><code> 
+Parkinson's Law:
+
+Work expands so as to fill the time
+
+available for its completion.
+        </code></pre>
+      </li>
+      <li>
+        <h3>dweight.c Improvement</h3>
+        <ul>
+          <li>
+            Height, length and width are all now initialised in a single line: 
+            <pre><code>int height, width, depth, volume;</code></pre>
+          </li>
+          <li>
+            Removed weight instead calculating within printf: 
+            <pre><code>printf("The weight of the box is %dkg.\n", (volume + 165) / 166);</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Uninitialised ints and floats</h3>
+        <p>The values were all zero for me. Maybe GCC initialises them as zero automatically.</p>
+      </li>
+      <li>
+        <h3>Illegal C identifiers</h3>
+        <ul>
+          <li>100_bottles ❌ <em>variables cannot begin with a number in C</em></li>
+          <li>_100_bottles ✅</li>
+          <li>one__hundred__bottles ✅</li>
+          <li>bottles_by_the_hundred_ ✅</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Adjacent Underscores</h3>
+        <p>It's a bad idea to have adjacent underscores (as in current__balance) because they could easily mistaken for a singular underscore.</p>
+      </li>
+    </ol>
+    <h2>Programming Projects</h2>
+    <hr>
+    <ol>
+      <li>
+        <h3>tick.c</h3>
+        <p>This program prints asterisks in a tick shape as shown below:</p>
+        <pre><code>
+       *
+      *
+     *
+*   *
+ * *
+  *</code></pre>
+      <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/tick.c">See Code</a>
+      </li>
+      <li>
+        <h3>sphereVolume.c</h3>
+        <p>This program calculates the volume of a sphere for a user-given radius</p>
+        <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/sphereVolume.c">See Code</a>
+      </li>
+      <li>
+        <h3>taxCalc.c</h3>
+        <p>This program calculates and displays an amount of money with tax added for a user-given amount</p>
+        <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/taxCalc.c">See Code</a>
+      </li>
+      <li>
+        <h3>poly.c</h3>
+        <p>Calculates 3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6 for a user-given value of x</p>
+        <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/poly.c">See Code</a>
+      </li>
+      <li>
+        <h3>bills.c</h3>
+        <p>This program works out the smallest number of notes/coins (twenties, tens, fivers and pounds) needed to pay a bill provided by the user</p>
+        <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/bills.c">See Code</a>
+      </li>
+      <li>
+        <h3>interest.c</h3>
+        <p>This one works out the balance remaining on a loan for the next three months of payments taking into account interest provided by the user.</p>
+        <a href="https://github.com/impemberton/CModernApproach/blob/main/CH2/Exercises/interest.c">See Code</a>
+      </li>
+    </ol>
+    <footer>Tag: <a href="../tags/tag_c_programming.html">c_programming</a></footer>
+    </article>
+  </body>
+</html>
