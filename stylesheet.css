@@ -17,20 +17,29 @@ nav {
     margin:auto;
 }
 nav ul{
+    padding:0;
+    margin:0;
     display: inline;
 }
 nav h1 {
     display: inline;
+    padding: 16px 32px;
 }
 
 nav ul li {
     display: inline;
+    padding: 0 32px;
+    padding-top: 24px;
+    padding-bottom: 18px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 100;
+}
+nav li:hover, nav h1:hover{
+    background-color: #31a162;
 }
 
 a {
@@ -40,14 +49,6 @@ a {
 
 }
 
-nav {
-    padding: 16px;
-}
-
-nav ul li {
-    padding: 0 3%;
-    margin:0;
-}
 article {
     padding: 16px;
     margin: auto;
