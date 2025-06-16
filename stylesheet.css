@@ -74,11 +74,17 @@ li {
     margin-bottom: 8px;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 pre code {
-  background-color: #eee;
-  border: 1px solid #999;
+  color: #3dc578;
+  font-weight: bold;
+  background-color: #101010;
+  border: 2px solid gray;
   display: block;
-  padding:10px 30px;
+  padding: 10px 30px;
   max-width: fit-content;
 
 }
