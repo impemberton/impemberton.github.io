@@ -15,6 +15,8 @@ nav {
     background-color: #3dc578;
     text-align: center;
     margin:auto;
+    max-width: 950px;
+    padding: 16px 32px;
 }
 nav ul{
     padding:0;
@@ -50,11 +52,12 @@ a {
 }
 
 article {
-    padding: 16px;
+    padding: 16px 32px;
     margin: auto;
     min-height: 100%;
     height: fit-content;
     background-color: white;
+    max-width: 950px;
 }
 
 header {
@@ -95,13 +98,15 @@ pre code {
     body {
         font-size: 12px;
     }
-}
-/* Large devices (laptops/desktops, 950px and up) */
-@media only screen and (min-width: 950px) {
-    nav, article {
-        max-width: 950px;
+    nav ul li {
+    padding: 0 8px;
+    padding-top: 24px;
+    padding-bottom: 18px;
     }
-    nav, article {
-        padding: 16px 32px;
-    }
+    nav h1 {
+    display: inline;
+    padding-left: 8px;
+    padding-right: 16px
 }
+}
+
